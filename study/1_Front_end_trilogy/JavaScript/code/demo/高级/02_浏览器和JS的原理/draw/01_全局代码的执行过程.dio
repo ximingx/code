@@ -1,0 +1,95 @@
+<mxfile host="65bd71144e">
+    <diagram id="uLGjIXd_daF9JAu25Qmv" name="执行前">
+        <mxGraphModel dx="778" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="RyY7rMpYFPjSK3yb_Ohq-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="17.5" y="110" width="180" height="275" as="geometry"/>
+                </mxCell>
+                <mxCell id="RyY7rMpYFPjSK3yb_Ohq-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="110" width="380" height="275" as="geometry"/>
+                </mxCell>
+                <mxCell id="RyY7rMpYFPjSK3yb_Ohq-3" value="上下文执行栈(ECS)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="61.25" y="80" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="RyY7rMpYFPjSK3yb_Ohq-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="27.5" y="325" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="RyY7rMpYFPjSK3yb_Ohq-5" value="全局执行上下文&lt;br&gt;GEC(Global Execution Context)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="295" width="192.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="RyY7rMpYFPjSK3yb_Ohq-6" value="VO: GO&lt;br&gt;scope chain&lt;br&gt;this" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="42.5" y="335" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="RyY7rMpYFPjSK3yb_Ohq-7" value="Global Object(window)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="120" width="140" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="RyY7rMpYFPjSK3yb_Ohq-8" value="Math对象&#10;Date&#10;String&#10;Number&#10;&#10;message: undefined&#10;num1: undefined&#10;num2: undefined&#10;foo: 0xa00" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="RyY7rMpYFPjSK3yb_Ohq-7" vertex="1">
+                    <mxGeometry y="30" width="140" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="RyY7rMpYFPjSK3yb_Ohq-11" value="&lt;span style=&quot;padding: 0px ; margin: 0px ; position: absolute ; cursor: text ; transform-origin: 0% 0% ; left: 55.2533px ; top: 147.085px ; font-size: 21.8711px ; font-family: sans-serif ; transform: scalex(1.00005)&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;每一个执行上下文会关联一个&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;padding: 0px ; margin: 0px ; position: absolute ; cursor: text ; transform-origin: 0% 0% ; left: 339.605px ; top: 147.085px ; font-size: 21.8711px ; font-family: sans-serif ; transform: scalex(1.08937)&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;VO&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;padding: 0px ; margin: 0px ; position: absolute ; cursor: text ; transform-origin: 0% 0% ; left: 373.316px ; top: 147.085px ; font-size: 21.8711px ; font-family: sans-serif&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;（&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;padding: 0px ; margin: 0px ; position: absolute ; cursor: text ; transform-origin: 0% 0% ; left: 395.352px ; top: 147.085px ; font-size: 21.8711px ; font-family: sans-serif ; transform: scalex(1.07418)&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;Variable Object&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;padding: 0px ; margin: 0px ; position: absolute ; cursor: text ; transform-origin: 0% 0% ; left: 563.784px ; top: 147.085px ; font-size: 21.8711px ; font-family: sans-serif ; transform: scalex(1.00055)&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;，变量对象），变量和函数声明&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;padding: 0px ; margin: 0px ; position: absolute ; cursor: text ; transform-origin: 0% 0% ; left: 870.336px ; top: 147.085px ; font-size: 21.8711px ; font-family: sans-serif ; transform: scalex(1.00205)&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;会被添加到这个&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;padding: 0px ; margin: 0px ; position: absolute ; cursor: text ; transform-origin: 0% 0% ; left: 1023.76px ; top: 147.085px ; font-size: 21.8711px ; font-family: sans-serif ; transform: scalex(1.08937)&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;VO&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;padding: 0px ; margin: 0px ; position: absolute ; cursor: text ; transform-origin: 0% 0% ; left: 1057.47px ; top: 147.085px ; font-size: 21.8711px ; font-family: sans-serif ; transform: scalex(1.0018)&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;对象中&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="640" width="20" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="3USpqQVqVSwplx4Y07_s-5" value="堆内存" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="85" width="50" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="RQW-Wc757HXHhHXCQcFg-5" value="Function Object(foo)&#10;0xa00" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="120" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="RQW-Wc757HXHhHXCQcFg-7" value="函数执行上下文" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="52.5" y="205" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="RQW-Wc757HXHhHXCQcFg-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="26.25" y="235" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="RQW-Wc757HXHhHXCQcFg-9" value="VO: AO&lt;br&gt;scope chain&lt;br&gt;this" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="41.25" y="245" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="RQW-Wc757HXHhHXCQcFg-10" value="Activation Object&#10;0xa01" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="210" width="140" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="RQW-Wc757HXHhHXCQcFg-14" value="num: undefined&lt;br&gt;message: undefined&lt;br&gt;age: undefined&lt;br&gt;height: undefined" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="RQW-Wc757HXHhHXCQcFg-10">
+                    <mxGeometry y="30" width="140" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="开始执行代码" id="vZLwUPT7dp6nYE_m62_J">
+        <mxGraphModel dx="778" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="XxNeRo8qAN6Skskvx6Yg-0"/>
+                <mxCell id="XxNeRo8qAN6Skskvx6Yg-1" parent="XxNeRo8qAN6Skskvx6Yg-0"/>
+                <mxCell id="XxNeRo8qAN6Skskvx6Yg-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="XxNeRo8qAN6Skskvx6Yg-1" vertex="1">
+                    <mxGeometry x="35" y="130" width="180" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="XxNeRo8qAN6Skskvx6Yg-3" value="&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="XxNeRo8qAN6Skskvx6Yg-1" vertex="1">
+                    <mxGeometry x="240" y="130" width="510" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="XxNeRo8qAN6Skskvx6Yg-7" value="上下文执行栈(ECS)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="XxNeRo8qAN6Skskvx6Yg-1" vertex="1">
+                    <mxGeometry x="75" y="100" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="XxNeRo8qAN6Skskvx6Yg-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="XxNeRo8qAN6Skskvx6Yg-1" vertex="1">
+                    <mxGeometry x="45" y="500" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="XxNeRo8qAN6Skskvx6Yg-9" value="执行上下文&lt;br&gt;EC(excution context)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="XxNeRo8qAN6Skskvx6Yg-1" vertex="1">
+                    <mxGeometry x="75" y="470" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="XxNeRo8qAN6Skskvx6Yg-12" value="VO: GO&lt;br&gt;scope chain&lt;br&gt;this" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="XxNeRo8qAN6Skskvx6Yg-1" vertex="1">
+                    <mxGeometry x="60" y="520" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8cz72LVx0g2Z4VLnUhpK-0" value="Global Object(window)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="XxNeRo8qAN6Skskvx6Yg-1" vertex="1">
+                    <mxGeometry x="260" y="150" width="140" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="8cz72LVx0g2Z4VLnUhpK-3" value="Math对象&#10;Date&#10;String&#10;Number&#10;&#10;foo: 0xa00&#10;message: &quot;Global Message&quot;&#10;num1: 10&#10;num2: 20&#10;result: 30" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="8cz72LVx0g2Z4VLnUhpK-0" vertex="1">
+                    <mxGeometry y="30" width="140" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="8cz72LVx0g2Z4VLnUhpK-7" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="XxNeRo8qAN6Skskvx6Yg-1" source="XxNeRo8qAN6Skskvx6Yg-8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="125" y="500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
