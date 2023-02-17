@@ -25,7 +25,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 // 纯函数: 相同输入一定产生相同的输出, 并且不会产生副作用
 var Person = /*#__PURE__*/ (function () {
-  debugger
 
   function Person(name, age) {
     _classCallCheck(this, Person);
