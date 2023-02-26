@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  
-  <script>
+
+<script>
 
     // const names = ["abc", "cba", "nba"]
     // const iterator = names[Symbol.iterator]()
@@ -24,34 +24,32 @@
     */
 
     // 1.定义了一个生成器函数
-    function* foo(name1) {
-      console.log("执行内部代码:1111", name1)
-      console.log("执行内部代码:2222", name1)
-      const name2 = yield "aaaa"
-      console.log("执行内部代码:3333", name2)
-      console.log("执行内部代码:4444", name2)
-      const name3 = yield "bbbb"
-      // return "bbbb"
-      console.log("执行内部代码:5555", name3)
-      console.log("执行内部代码:6666", name3)
-      yield "cccc"
-      return undefined
+    function* foo() {
+        console.log("执行内部代码:1111")
+        console.log("执行内部代码:2222")
+        yield "aaaa"
+        console.log("执行内部代码:3333")
+        console.log("执行内部代码:4444")
+        yield "bbbb"
+        console.log("执行内部代码:5555")
+        console.log("执行内部代码:6666")
+        yield "cccc"
     }
 
     // 2.调用生成器函数, 返回一个 生成器对象
     const generator = foo("next1")
     // 调用next方法
-    // console.log(generator.next()) // { done: false, value: "aaaa" }
-    // console.log(generator.next()) // { done: false, value: "bbbb" }
-    // console.log(generator.next()) //  { done: false, value: "cccc" }
-    // console.log(generator.next()) // {done: true, value: undefined}
+    console.log(generator.next()) // { done: false, value: "aaaa" }
+    console.log(generator.next()) // { done: false, value: "bbbb" }
+    console.log(generator.next()) //  { done: false, value: "cccc" }
+    console.log(generator.next()) // {done: true, value: undefined}
 
     // 3.在中间位置直接return, 结果
-    // console.log(generator.next()) // { done: false, value: "aaaa" }
-    // console.log(generator.next()) // { done: true, value: "bbbb" }
-    // console.log(generator.next()) // { done: true, value: undefined }
-    // console.log(generator.next()) // { done: true, value: undefined }
-    // console.log(generator.next()) // { done: true, value: undefined }
+    console.log(generator.next()) // { done: false, value: "aaaa" }
+    console.log(generator.next()) // { done: true, value: "bbbb" }
+    console.log(generator.next()) // { done: true, value: undefined }
+    console.log(generator.next()) // { done: true, value: undefined }
+    console.log(generator.next()) // { done: true, value: undefined }
     // console.log(generator.next()) // { done: true, value: undefined }
 
     // 4.给函数每次执行的时候, 传入参数
@@ -60,7 +58,7 @@
     console.log(generator.next("next3"))
     // console.log(generator.next())
 
-  </script>
+</script>
 
 </body>
 </html>

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  
-  <h2 class="name"></h2>
 
-  <script>
+<h2 class="name"></h2>
+
+<script>
 
     const obj = {
-      name: "why",
-      age: 18,
-      height: 1.88
+        name: "why",
+        age: 18,
+        height: 1.88
     }
 
     // 需求: 监听对象属性的所有操作
@@ -34,27 +34,25 @@
     // })
 
     // 2.监听所有的属性: 遍历所有的属性, 对每一个属性使用defineProperty
-    const keys = Object.keys(obj)
-    for (const key of keys) {
-      let value = obj[key]
-      Object.defineProperty(obj, key, {
-        set: function(newValue) {
-          console.log(`监听: 给${key}设置了新的值:`, newValue)
-          value = newValue
-        },
-        get: function() {
-          console.log(`监听: 获取${key}的值`)
-          return value
-        }
-      })
-    }
+    Object.keys(obj).forEach(key => {
+        let value = obj[key]
+        Object.defineProperty(obj, key, {
+            set: function (newValue) {
+                console.log(`监听: 给${key}设置了新的值:`, newValue)
+                value = newValue
+            },
+            get: function () {
+                console.log(`监听: 获取${key}的值`)
+                return value
+            }
+        })
+    })
 
     // console.log(obj.name)
     // obj.name = "kobe"
     console.log(obj.age)
     obj.age = 17
     console.log(obj.age)
-
 
 
     // 什么是响应式?
@@ -64,8 +62,7 @@
     // obj.name = "james"
 
 
-
-  </script>
+</script>
 
 </body>
 </html>
